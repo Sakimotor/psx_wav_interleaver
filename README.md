@@ -10,6 +10,22 @@ In order to use this script, you need to have Python 3 installed, as well as a c
 
 Make a folder in which you put all of your .WAV files, and run `wav_interleaver.py <folder_path>`. The script creates an `interleave.txt` and a `folder_name.xa` file in the current working directory.
 
+```bash
+usage: wav_interleaver.py <folder> [options]
+
+positional arguments:
+  folder                the folder where all the .WAV files are located. The final XA will take that folder's title as
+                        its' name.
+
+options:
+  -h, --help            show this help message and exit
+  -f [FREQUENCY], --frequency [FREQUENCY]
+                        the frequency each individual XA, and the final interleaved one, will get
+  -m [MODE], --mode [MODE]
+                        the sector mode xainterleave will use. 0 for full raw sectors, 1 just for XA.
+  -o, --overwrite, --no-overwrite
+                        If this option is used, we will overwrite pre-existing .wav files
+```
 
 ## Example of use.
 
